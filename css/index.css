@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #385165;
+}
+
+header.top-header {
+	background-image: /*linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), */url("../images/header-background.jpg");
+	background-size: cover;
+	height: 800px;
+}
+
+header.top-header nav ul li {
+	float: left;
+	list-style: none;
+	padding: 20px;
+	font-size: 20px;
+}
+
+header.top-header nav ul li.contact {
+	float: right;
+}
+
+
+ul::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+header.top-header nav ul li a {
+	text-decoration: none;
+	color: azure;
+}
+
+
+header.top-header nav ul li a.button {
+	background-color: azure;
+	color: black;
+	padding: 10px 15px 10px 15px;
+	border-radius: 25px;
+}
+
+header.top-header nav ul li a:hover {
+	color: lightseagreen;
+}
+
+header.top-header nav ul li a.button:hover {
+	color: lightseagreen;
+	background-color: rgba(0,0,0,0.5);
+}
+
+div.container {
+	color: azure;
+	text-align: center;
+	margin-top: 150px;
+
+}
+
+div.container h1 {
+	font-size: 50px;
+
+}
+
+div.container p.content {
+	color: lightseagreen;
+	font-size: 25px;
+}
+
+div.container a.button {
+	display: inline-block;
+	text-decoration: none;
+	background-color: azure;
+	color: black;
+	padding: 10px 15px 10px 15px;
+	margin: 10px;
+	font-size: 20px;
+	border-radius: 25px;
+}
+
+div.container a.button:hover {
+	color: lightseagreen;
+	background-color: rgba(0,0,0,0.5);
+}
+
+section.about-me {
+	padding: 50px;
+	text-align: center;
+    color: azure;
+}
+
+section.about-me div.about-container div.vector-img img{
+	width: 500px;
+	margin-top: 20px;
+	border-radius: 25px;
+}
+
+section.about-me div.about-container div.matter, section.about-me div.about-container div.vector-img {
+	width: 50%;
+	float: left;
+	font-size: 20px;
+}
+
+div.about-container::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+div.about-container div.matter {
+	margin-top: 20px;
+	text-align: left;
+}
+
+div.matter p {
+	padding: 10px;
+}
+
+div.matter a.button {
+	display: inline-block;
+	text-decoration: none;
+	background-color: azure;
+	color: black;
+	padding: 10px 15px 10px 15px;
+	margin: 10px;
+	font-size: 20px;
+	border-radius: 25px;
+}
+
+div.matter a.button:hover {
+	color: lightseagreen;
+	background-color: rgba(0,0,0,0.5);
+}
+
+div.another-one div.parts {
+	width: 33%;
+	float: left;
+	margin-top: 50px;
+	padding-top: 10px;
+	border-radius: 25px;
+}
+
+div.another-one::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+div.another-one div.parts p.content {
+	margin: 20px;
+}
+
+div.another-one div.parts:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+section.why-me {
+	margin-top: 50px;
+	text-align: center;
+	color: azure;
+}
+
+section.why-me div.why-me-container div.matter, section.why-me div.why-me-container div.vector-img {
+	width: 50%;
+	float: left;
+	font-size: 20px;
+}
+
+section.why-me div.why-me-container div.vector-img img{
+	width: 500px;
+	border-radius: 25px;
+}
+
+div.why-me-container::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+div.why-me-container div.matter {
+	margin-top: 20px;
+	text-align: left;
+}
+
+section.contact-me {
+	margin-top: 50px;
+	padding-top: 50px;
+	text-align: center;
+	color: azure;
+	background-color: rgba(0,0,0,0.5);
+}
+
+section.contact-me  div.contact-me-container div.matter, section.contact-me  div.contact-me-container div.vector-img {
+	width: 50%;
+	float: left;
+	font-size: 20px;
+}
+
+section.contact-me  div.contact-me-container div.vector-img img {
+	width: 500px;
+	border-radius: 25px;
+}
+
+div.contact-me-container::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+div.contact-me-container div.matter {
+	margin-top: 20px;
+	text-align: left;
+}
+
+@media (max-width: 500px){
+
+	header.top-header nav{
+		margin-bottom: 20px;
+	}
+
+
+	header.top-header nav ul li{
+		font-size: 16px;
+	}
+
+	header.top-header nav ul li.contact {
+	    float: left;
+    }
+
+    ul::after {
+	    display: block;
+	    clear: both;
+	    content: "";
+    }
+
+	header.top-header {
+		height: 50vh;
+		background-image: /*linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), */url("../images/header-background.jpg");
+		background-size: cover;
+		background-position-x: center;
+	}
+
+    header.top-header div.container{
+    	margin-top: 0px;
+    }
+
+	header.top-header div.container h1{
+		font-size: 25px;
+	}
+
+	header.top-header div.container p{
+		font-size: 16px;
+	}
+
+	header.top-header div.container a.button {
+		font-size:16px;
+	}
+
+	section.about-me{
+		text-align: center;
+		padding: 0;
+		margin-top: 20px;
+	}
+
+	section.about-me div.about-container div.matter{
+		width: 100vw;
+	    float: none;
+	    margin-top: 20px;
+	    padding: 10px;
+	}
+
+	div.another-one div.parts{
+		width: 100vw;
+		float: none;
+	}
+
+	section.about-me div.about-container div.vector-img img{
+		width: 100vw;
+	}
+
+	section.why-me div.why-me-container div.vector-img img{
+		width: 100vw;
+	}
+
+	section.why-me div.why-me-container div.matter{
+		width: 100vw;
+	}
+
+    section.contact-me {
+	margin-top: 50px;
+	padding-top: 50px;
+	text-align: center;
+	color: azure;
+	background-color: rgba(0,0,0,0.5);
+	height: 850px;
+    }
+
+    section.contact-me  div.contact-me-container div.matter, section.contact-me  div.contact-me-container div.vector-img {
+	    width: 100vw;
+	    font-size: 16px;
+    }
+
+    section.contact-me  div.contact-me-container div.vector-img img {
+	    width: 100vw;
+	    border-radius: 25px;
+	    margin-top: 20px;
+    }
+
+
+    div.contact-me-container div.matter {
+	    margin-top: 20px;
+	    text-align: center;
+    }
+    /*------------------------
+	section.contact-me div.contact-me-container div.vector-img, section.contact-me div.contact-me-container div.matter{
+		width: 100vw;
+		float: none;
+		text-align: center;
+		font-size: 16px;
+	}
+	section.contact-me div.contact-me-container div.vector-img img{
+		width: 100vw;
+	}
+
+	div.contact-me-container::after {
+	display: block;
+	clear: both;
+	content: "";-*/
+}
+
+
+}
